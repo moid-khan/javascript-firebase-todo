@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDanXqaGv_dWyZs0iSvWoSt5kmcMN_zZDQ",
+        authDomain: "todo-app-24c83.firebaseapp.com",
+        databaseURL: "https://todo-app-24c83.firebaseio.com",
+        projectId: "todo-app-24c83",
+        storageBucket: "todo-app-24c83.appspot.com",
+        messagingSenderId: "985110380550",
+        appId: "1:985110380550:web:4967b67ee28ae1ec79c387",
+        measurementId: "G-CLQCSR2GF4",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div
+        class="col-md-4 offset-md-4 col-sm-12 col-lg-4 p-3 text-center rounded bg-todo shadow-lg"
+      >
+        <small id="time" class="text-muted">00:00</small>
+        <h4 class="mt-3">All Tasks</h4>
+        <input
+          type="text"
+          id="txtName"
+          class="task mt-3 rounded-pill border"
+          placeholder="Enter task here"
+        />
+        <center>
+          <table id="table"></table>
+          <button onclick="insertData()" class="btn-insert mt-3">
+            <img src="icons/plus.png" alt="plus-icon" />
+          </button>
+        </center>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

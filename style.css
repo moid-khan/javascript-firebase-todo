@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(
+    -90deg,
+    rgba(52, 124, 236, 1) 4%,
+    rgba(80, 167, 243, 1) 100%,
+    rgba(52, 124, 236, 1) 100%
+  );
+}
+
+.bg-todo {
+  background-color: #f0f2f5;
+}
+
+#table {
+  margin-top: 10px;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+#table tr {
+  border-radius: 50px;
+}
+
+#table tr td {
+  padding: 12px;
+  margin-top: 10px;
+}
+
+img {
+  width: 20px;
+  cursor: pointer;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.btn-insert {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #347cec;
+  border: none;
+}
+
+.btn-insert:focus {
+  outline: none;
+}
+
+.btn-insert img {
+  width: 40px;
+  filter: invert(100%);
+}
+
+.task {
+  width: 80%;
+  padding: 5px;
+  padding-left: 15px;
+  border: none;
+}
+
+.task:focus {
+  outline: none;
+}
