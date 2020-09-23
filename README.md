@@ -1,4 +1,3 @@
-# javascript-todo-app
-Javascript ToDo App
+# javascript-firebase-todo
+Javascript ToDo App with Firebase Database
 
-App URL: https://moid-khan.github.io/javascript-todo-app/
